@@ -7,9 +7,9 @@ body {
       min-height: 100vh;
       margin: 0;
       padding: 0;
-      background-image: url('images/linen3-sat.jpg');
+      background-image: url('images/ddenim.jpg');
       background-repeat: repeat;
-      background-size: 20%; /*20% for linen bg, 50% for denim bg*/
+      background-size: 50%; /*20% for linen bg, 50% for denim bg*/
       background-position: left;
       font-family: "Victor Mono", monospace;
       font-size: 10pt;
@@ -18,7 +18,7 @@ body {
 
     header {
       width: 100%;
-      pointer-events: none; /* lfggggggggggg */
+      pointer-events: none;
       text-align: left;
       font-size: 8pt;
       margin-left: 40px; 
@@ -28,6 +28,7 @@ body {
       position: fixed;
       left: 0;
       z-index: 10;
+      text-shadow: 2px 2px 3px black;
     }
 
     footer {
@@ -47,8 +48,8 @@ body {
       justify-content: center;
       align-items: center;
       width: 100%;
-      padding-top: 30px; /* space for header text-shadow: 2px 2px 3px black; */
-      padding-bottom: 50px; /* space for footer */
+      padding-top: 30px;
+      padding-bottom: 50px;
       box-sizing: border-box;
     }
 
@@ -150,7 +151,7 @@ body {
 
     h1 {
       font-family: "Newake";
-      /*text-shadow: 2px 2px 3px black;*/
+      text-shadow: 2px 2px 3px black;
     }
 
     span {
