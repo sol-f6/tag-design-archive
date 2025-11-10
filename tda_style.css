@@ -7,26 +7,26 @@ body {
       min-height: 100vh;
       margin: 0;
       padding: 0;
-      background-image: url('images/ddenim.jpg');
+      background-image: url('images/linen3.jpeg');
       background-repeat: repeat;
       background-size: 50%;
       background-position: left;
       font-family: "Victor Mono", monospace;
-      font-size: 10pt;
+      font-size: 8pt;
       
-    }
+      }
 
     header {
       pointer-events: none;
       text-align: left;
       font-size: 8pt;
       background: rgba(255, 255, 255, 0);
-      color: rgb(166, 39, 68);
+      color: rgb(189, 15, 47);
       padding: 3px 0;
       position: fixed;
       left: 30px;
       z-index: 10;
-      text-shadow: 2px 2px 3px black;
+      text-shadow: 2px 2px 2px rgb(91, 29, 29);
     }
 
     footer {
@@ -42,13 +42,12 @@ body {
     .b-header {
       pointer-events: none;
       text-align: right;
-      font-size: 8pt;
       position: fixed;
-      bottom: 25px;
-      right: 30px;
-      color: rgb(166, 39, 68);
+      bottom: 28px;
+      right: 43px;
+      color: rgb(189, 15, 47);
       z-index: 10;
-      text-shadow: 2px 2px 3px black;
+      text-shadow: 2px 2px 2px rgb(91, 29, 29);
     }
 
     .content {
@@ -64,7 +63,7 @@ body {
 
     .grid-container {
       display: grid;
-      grid-template-columns: repeat(4, 150px);
+      grid-template-columns: repeat(4, 180px);
       grid-auto-rows: 125px;
       gap: 25px;
       object-fit: contain;
@@ -119,12 +118,12 @@ body {
       justify-content: center;
       text-align: left;
       overflow: hidden;
-      background-color: red;
+      /*background-color: red;*/
       cursor: url("images/snip-shut.png"), pointer;
     }
 
     .box img {
-      height: 80%;
+      height: 70%;
       object-fit: contain;
       display: block;
       transition: transform 0.2s ease;
@@ -135,6 +134,28 @@ body {
       transform: scale(1.05);
     }
 
+    .deco-img {
+      pointer-events: none;
+      position: absolute;
+      z-index: 8;
+    }
+
+    .head-bg {
+      pointer-events: none;
+      position: fixed;
+      z-index: 9;
+      top: 0;
+      left: 0;
+    }
+
+    .head-bg-2 {
+      pointer-events: none;
+      position: fixed;
+      z-index: 7;
+      bottom: 0;
+      right: 0;
+    }
+
     .info-text {
       display: none;
       pointer-events: none;
@@ -142,16 +163,17 @@ body {
       font-family: "Victor Mono", monospace;
       font-size: 7pt;
       overflow: auto;
-      bottom: 20%;
-      left: 0;
       border-radius: 10px;
       width: fit-content;
       height: fit-content;
       background-color: rgba(98, 11, 33, 0.75);
       color: rgb(255, 255, 255);
-      padding-left: 5px;
+      padding-left: 3px;
+      padding-right: 3px;
       box-sizing: border-box;
-      text-align: left;
+      text-align: center;
+      width: 90%;
+      z-index: 10;
 
     }
 
@@ -160,10 +182,14 @@ body {
     src: url("NewakeFont-Demo.otf") format("opentype");
     }
     
-
+    @font-face {
+      font-family: Senza cuore;
+      src: url("senza.ttf") format("truetype");
+    }
+    
     h1 {
-      font-family: "Newake";
-      text-shadow: 2px 2px 3px black;
+      font-family: "Senza cuore";
+      text-shadow: 2px 2px 2px rgb(91, 29, 29);
     }
 
     span {
@@ -173,7 +199,7 @@ body {
 
     p::first-line {
       font-family: "Bitcount Grid Single", sans-serif;
-      font-size: 8pt;
+      font-size: 9pt;
     }
 
     .info-text.show {
