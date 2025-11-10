@@ -7,7 +7,7 @@ body {
       min-height: 100vh;
       margin: 0;
       padding: 0;
-      background-image: url('images/linen3.jpeg');
+      background-image: url('images/linnn.avif');
       background-repeat: repeat;
       background-size: 50%;
       background-position: left;
@@ -19,7 +19,7 @@ body {
     header {
       pointer-events: none;
       text-align: left;
-      font-size: 8pt;
+      font-size: 10pt;
       background: rgba(255, 255, 255, 0);
       color: rgb(189, 15, 47);
       padding: 3px 0;
@@ -45,6 +45,8 @@ body {
       position: fixed;
       bottom: 28px;
       right: 43px;
+      font-family: "Victor Mono", monospace;
+      font-weight: 400;
       color: rgb(189, 15, 47);
       z-index: 10;
       text-shadow: 2px 2px 2px rgb(91, 29, 29);
@@ -172,7 +174,7 @@ body {
       padding-right: 3px;
       box-sizing: border-box;
       text-align: center;
-      width: 90%;
+      width: 80%;
       z-index: 10;
 
     }
